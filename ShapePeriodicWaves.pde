@@ -12,7 +12,7 @@ void setup()
   stroke(0);
   strokeWeight(1);
   fill(0);
-  ps = new PeriodicShape(new PVector(62.5, 75), new PVector(150, 150));
+  ps = new PeriodicShape(new PVector(62.5, 75));
   ps.setLoc(62.5, 25);
   ps.lineTo(100, 100);
   ps.lineTo(25, 100);
