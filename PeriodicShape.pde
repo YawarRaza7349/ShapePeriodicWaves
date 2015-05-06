@@ -4,20 +4,18 @@ class PeriodicShape
   private PVector previous;
   private Collection<Curve> curves;
   private Collection<PVector> intersections;
-  private PVector dimensions;
   private float angle;
   private float tangent;
   
   private final float DELTA_ANGLE = QUARTER_PI/30.0f;
   private final float DELTA_TANGENT = tan(DELTA_ANGLE);
   
-  public PeriodicShape(PVector c, PVector dim)
+  public PeriodicShape(PVector c)
   {
     center = c;
     curves = new HashSet<Curve>();
     previous = null;
     intersections = new HashSet<PVector>();
-    dimensions = dim;
     angle = 0.0f;
     tangent = 0.0f;
   }
